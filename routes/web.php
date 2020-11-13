@@ -38,6 +38,20 @@ Route::get('/movies/save','Index\MoviesController@save');//开始抽奖
 
 
 
+Route::post('/wx','TextController@wx'); //微信接入
+
+Route::get('/access_token','TextController@access_token'); //获取access_token
+
+Route::get('/test2','TextController@test2'); //测试
+Route::post('/test3','TextController@test3'); //测试3
+
+Route::get('/getweather','TextController@getweather');  //天气
+Route::get('/createMenu','TextController@createMenu');  //
+Route::any('/eckSignature','TextController@checkSignature');
+
+Route::get('/test5','TextController@test5');
+
+
 
 
 
