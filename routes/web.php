@@ -51,6 +51,18 @@ Route::any('/eckSignature','TextController@checkSignature');
 
 Route::get('/test5','TextController@test5');
 
+Route::get('/userinfo','ApiController@userinfo');
+Route::get('/test','Weixin\ApiController@test');
+
+
+
+Route::get('/xcxlogin','Weixin\XcxController@login'); //小程序登陆 获取code
+Route::get('/goods','Weixin\XcxController@goods'); //列表页
+
+Route::get('/detail','Weixin\XcxController@detail'); //详情页
+
+
+
 
 
 
